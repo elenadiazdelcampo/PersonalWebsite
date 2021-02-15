@@ -1,0 +1,1066 @@
+:root {
+    --python: 60%;
+    --php: 70%;
+    --java: 60%;
+    --javascript: 60%;
+    --dart: 50%;
+
+    --flutter: 50%;
+    --android: 80%;
+
+    --html: 70%;
+    --css: 60%;
+    --prestashop: 80%;
+
+    --mysql: 80%;
+    --mongo: 30%;
+    --sqlite: 50%;
+
+    --riesgos: 70%;
+    --leyes: 60%;
+    --pericial: 70%;
+    --auditoria: 50%;
+
+    --linux: 70%;
+    --slim: 80%;
+    --github: 80%;
+    --latex: 60%;
+
+    --espanol: 100%;
+    --ingles: 50%;
+
+  }
+
+.skills-bar-container {
+    position: relative;
+    min-width: 300px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+
+.skills-bar-container li {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.skills-bar-container li .progressbar-title {
+    color: #8c8b8b;
+}
+
+.skills-bar-container li .progressbar-title h5 {
+    display: inline-block;
+}
+
+.skills-bar-container li .progressbar-title img {
+    height: 1.5em;
+    width: auto;
+}
+
+.skills-bar-container li .progressbar-title .percent {
+    position: absolute;
+    right: 5px;
+}
+
+.skills-bar-container li .bar-container {
+    background: #555;
+    position: relative;
+    width: 100%;
+    height: 8px;
+    margin-top: 2px;
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.skills-bar-container li .bar-container .progressbar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.progressred {
+    background-color: #c0392b;
+}
+
+.progressblue {
+    background-color: #1199ff;
+}
+
+.progresspurple {
+    background-color: #9b59b6;
+}
+
+.progressorange {
+    background-color: #ffa500;
+}
+
+.progressgreen {
+    background-color: #27ae60;
+}
+
+
+/*--------------------------------------------------------
+    Lenguajes de programación
+-----------------------------------------------------------*/
+.skills-bar-container li .bar-container #progress-python {
+    -webkit-animation-name: progress-python;
+    animation-name: progress-python;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.skills-bar-container li .bar-container #progress-php {
+    -webkit-animation-name: progress-php;
+    animation-name: progress-php;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.skills-bar-container li .bar-container #progress-java {
+    -webkit-animation-name: progress-java;
+    animation-name: progress-java;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.skills-bar-container li .bar-container #progress-javascript {
+    -webkit-animation-name: progress-javascript;
+    animation-name: progress-javascript;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+
+.skills-bar-container li .bar-container #progress-dart {
+    -webkit-animation-name: progress-dart;
+    animation-name: progress-dart;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+/*--------------------------------------------------------
+    Desarrollo móvil
+-----------------------------------------------------------*/
+.skills-bar-container li .bar-container #progress-flutter {
+    -webkit-animation-name: progress-flutter;
+    animation-name: progress-flutter;
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+
+.skills-bar-container li .bar-container #progress-android{
+    -webkit-animation-name: progress-android;
+    animation-name: progress-android;
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+
+/*--------------------------------------------------------
+    Desarrollo web
+-----------------------------------------------------------*/
+.skills-bar-container li .bar-container #progress-html {
+    -webkit-animation-name: progress-html;
+    animation-name: progress-html;
+    -webkit-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+}
+
+.skills-bar-container li .bar-container #progress-css {
+    -webkit-animation-name: progress-css;
+    animation-name: progress-css;
+    -webkit-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+}
+
+
+.skills-bar-container li .bar-container #progress-prestashop {
+    -webkit-animation-name: progress-prestashop;
+    animation-name: progress-prestashop;
+    -webkit-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+}
+
+.skills-bar-container li .bar-container #progress-mysql {
+    -webkit-animation-name: progress-mysql;
+    animation-name: progress-mysql;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+.skills-bar-container li .bar-container #progress-mongo {
+    -webkit-animation-name: progress-mongo;
+    animation-name: progress-mongo;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+.skills-bar-container li .bar-container #progress-sqlite {
+    -webkit-animation-name: progress-sqlite;
+    animation-name: progress-sqlite;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+.skills-bar-container li .bar-container #progress-linux {
+    -webkit-animation-name: progress-linux;
+    animation-name: progress-linux;
+    -webkit-animation-delay: 3.1s;
+    animation-delay: 3.1s;
+}
+
+.skills-bar-container li .bar-container #progress-slim {
+    -webkit-animation-name: progress-slim;
+    animation-name: progress-slim;
+    -webkit-animation-delay: 3.1s;
+    animation-delay: 3.1s;
+}
+
+.skills-bar-container li .bar-container #progress-github {
+    -webkit-animation-name: progress-github;
+    animation-name: progress-github;
+    -webkit-animation-delay: 3.1s;
+    animation-delay: 3.1s;
+}
+
+.skills-bar-container li .bar-container #progress-latex {
+    -webkit-animation-name: progress-latex;
+    animation-name: progress-latex;
+    -webkit-animation-delay: 3.1s;
+    animation-delay: 3.1s;
+}
+
+.skills-bar-container li .bar-container #progress-espanol {
+    -webkit-animation-name: progress-espanol;
+    animation-name: progress-espanol;
+    -webkit-animation-delay: 3.7s;
+    animation-delay: 3.7s;
+}
+
+.skills-bar-container li .bar-container #progress-ingles {
+    -webkit-animation-name: progress-ingles;
+    animation-name: progress-ingles;
+    -webkit-animation-delay: 3.7s;
+    animation-delay: 3.7s;
+}
+
+
+
+
+/*--------------------------------------------------------
+    Master
+-----------------------------------------------------------*/
+
+.skills-bar-container li .bar-container #progress-riesgos {
+    -webkit-animation-name: progress-riesgos;
+    animation-name: progress-riesgos;
+    -webkit-animation-delay: 3.1s;
+    animation-delay: 3.1s;
+}
+
+.skills-bar-container li .bar-container #progress-leyes {
+    -webkit-animation-name: progress-leyes;
+    animation-name: progress-leyes;
+    -webkit-animation-delay: 3.1s;
+    animation-delay: 3.1s;
+}
+
+.skills-bar-container li .bar-container #progress-pericial {
+    -webkit-animation-name: progress-pericial;
+    animation-name: progress-pericial;
+    -webkit-animation-delay: 3.1s;
+    animation-delay: 3.1s;
+}
+
+.skills-bar-container li .bar-container #progress-auditoria {
+    -webkit-animation-name: progress-auditoria;
+    animation-name: progress-auditoria;
+    -webkit-animation-delay: 3.1s;
+    animation-delay: 3.1s;
+}
+
+/*--------------------------------------------------------
+    Python
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--python);
+    }
+}
+
+@-moz-keyframes progress-python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--python);
+    }
+}
+
+@keyframes progress-python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--python);
+    }
+}
+
+
+/*--------------------------------------------------------
+    php
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-php {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--php);
+    }
+}
+
+@-moz-keyframes progress-php {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--php);
+    }
+}
+
+
+@keyframes progress-php {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--php);
+    }
+}
+
+
+/*--------------------------------------------------------
+    Javascript
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--javascript);
+    }
+}
+
+@-moz-keyframes progress-javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--javascript);
+    }
+}
+
+@keyframes progress-javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--javascript);
+    }
+}
+
+
+/*--------------------------------------------------------
+    Java
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--java);
+    }
+}
+
+@-moz-keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--java);
+    }
+}
+
+
+@keyframes progress-java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--java);
+    }
+}
+
+
+/*--------------------------------------------------------
+    Dart
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-dart {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--dart);
+    }
+}
+
+@-moz-keyframes progress-dart {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--dart);
+    }
+}
+
+@keyframes progress-dart {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--dart);
+    }
+}
+
+/*--------------------------------------------------------
+    flutter
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-flutter {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--flutter);
+    }
+}
+
+@-moz-keyframes progress-flutter {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--flutter);
+    }
+}
+
+@keyframes progress-flutter {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--flutter);
+    }
+}
+
+/*--------------------------------------------------------
+    android
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-android {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--android);
+    }
+}
+
+@-moz-keyframes progress-android {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--android);
+    }
+}
+
+@keyframes progress-android {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--android);
+    }
+}
+
+/*--------------------------------------------------------
+    html
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--html);
+    }
+}
+
+@-moz-keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--html);
+    }
+}
+
+@keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--html);
+    }
+}
+
+/*--------------------------------------------------------
+    css
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--css);
+    }
+}
+
+@-moz-keyframes progress-css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--css);
+    }
+}
+
+@keyframes progress-css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--css);
+    }
+}
+
+
+/*--------------------------------------------------------
+    prestashop
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-prestashop {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--prestashop);
+    }
+}
+
+@-moz-keyframes progress-prestashop {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--prestashop);
+    }
+}
+
+@keyframes progress-prestashop {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--prestashop);
+    }
+}
+
+/*--------------------------------------------------------
+    mysql
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-mysql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--mysql);
+    }
+}
+
+@-moz-keyframes progress-mysql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--mysql);
+    }
+}
+
+@keyframes progress-mysql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--mysql);
+    }
+}
+
+
+/*--------------------------------------------------------
+    mongo
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-mongo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--mongo);
+    }
+}
+
+@-moz-keyframes progress-mongo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--mongo);
+    }
+}
+
+@keyframes progress-mongo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--mongo);
+    }
+}
+
+/*--------------------------------------------------------
+    sqlite
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-sqlite {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--sqlite);
+    }
+}
+
+@-moz-keyframes progress-sqlite {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--sqlite);
+    }
+}
+
+@keyframes progress-sqlite {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--sqlite);
+    }
+}
+
+/*--------------------------------------------------------
+    linux
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-linux {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--linux);
+    }
+}
+
+@-moz-keyframes progress-linux {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--linux);
+    }
+}
+
+@keyframes progress-linux {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--linux);
+    }
+}
+
+/*--------------------------------------------------------
+    slim
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-slim {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--slim);
+    }
+}
+
+@-moz-keyframes progress-slim {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--slim);
+    }
+}
+
+@keyframes progress-slim {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--slim);
+    }
+}
+
+/*--------------------------------------------------------
+    github
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-github {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--github);
+    }
+}
+
+@-moz-keyframes progress-github {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--github);
+    }
+}
+
+@keyframes progress-github {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--github);
+    }
+}
+
+
+
+/*--------------------------------------------------------
+    latex
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-latex {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--latex);
+    }
+}
+
+@-moz-keyframes progress-latex {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--latex);
+    }
+}
+
+@keyframes progress-latex {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--latex);
+    }
+}
+
+
+/*--------------------------------------------------------
+    espanol
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-espanol {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--espanol);
+    }
+}
+
+@-moz-keyframes progress-espanol {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--espanol);
+    }
+}
+
+@keyframes progress-espanol {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--espanol);
+    }
+}
+
+/*--------------------------------------------------------
+    ingles
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-ingles {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--ingles);
+    }
+}
+
+@-moz-keyframes progress-ingles {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--ingles);
+    }
+}
+
+@keyframes progress-ingles {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--ingles);
+    }
+}
+
+/*--------------------------------------------------------
+    riesgos
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-riesgos {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--riesgos);
+    }
+}
+
+@-moz-keyframes progress-riesgos {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--riesgos);
+    }
+}
+
+@keyframes progress-riesgos {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--riesgos);
+    }
+}
+
+/*--------------------------------------------------------
+    leyes
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-leyes {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--ingles);
+    }
+}
+
+@-moz-keyframes progress-leyes {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--leyes);
+    }
+}
+
+@keyframes progress-leyes {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--leyes);
+    }
+}
+
+
+/*--------------------------------------------------------
+    pericial
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-pericial {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--pericial);
+    }
+}
+
+@-moz-keyframes progress-pericial {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--pericial);
+    }
+}
+
+@keyframes progress-pericial {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--pericial);
+    }
+}
+
+/*--------------------------------------------------------
+    auditoria
+-----------------------------------------------------------*/
+@-webkit-keyframes progress-auditoria {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--auditoria);
+    }
+}
+
+@-moz-keyframes progress-auditoria {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--auditoria);
+    }
+}
+
+@keyframes progress-auditoria {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--auditoria);
+    }
+}
+
+

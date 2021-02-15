@@ -1,0 +1,772 @@
+:root {
+    --main-color: #fed136;
+    --main-color: #f708c1;
+}
+
+body {
+    overflow-x: hidden;    
+    font-family: verdana, helvetica;
+}
+
+/*--------------------------------------------------------
+    Menu de navegación
+-----------------------------------------------------------*/
+
+#mainNav {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  transition: padding-top .3s, padding-bottom .3s;
+  border: none;
+  background-color: coral;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: black;
+}
+
+#fullpage .section h1{
+    text-align: center;
+    color: black;
+}
+
+#mainNav .navbar-brand {
+  color: var(--main-color);
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1rem;
+}
+
+#mainNav .navbar-brand, #mainNav .navbar-brand:hover {
+  font-size: 1.75em;
+  transition: all .3s;
+  color: #212529;
+}
+
+#inicio {
+	margin-top: 80px;
+}
+
+#formacion, #habilidades, #portfolio, #sobremi, #contacto {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.var-highlight{
+  color: #C0AD60;
+}
+.string-highlight{
+  color: rgba(253, 149, 90, 0.8);
+}
+
+@-webkit-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+#foto {
+  background-image: url(dos-monitores.jpg);
+  height: 430px;
+  width: 800px;
+}
+
+.string-type1tab {
+    padding-left: 2em;
+}
+
+.string-type2tab {
+    padding-left: 4em;
+}
+
+#secciones {
+    background-color: bisque;
+}
+
+.page-section h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-transform: none;
+    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+
+/*--------------------------------------------------------
+    Flecha principio CV
+-----------------------------------------------------------*/
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+@-ms-keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    background-position: center top;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -moz-background-size: 75% auto;
+    -o-background-size: 75% auto;
+    -webkit-background-size: 75% auto;
+    background-size: 75% auto;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    background-position: center bottom;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+  }
+}
+
+.scroll-down {
+  transform:rotate(-90deg);
+  margin: 0;
+  /*border: 2px solid #fff;*/
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  position: relative;
+  left: 15%;
+  width: 60px;
+  height: 100px;
+  margin-left: -50px;
+
+}
+.scroll-down a {
+  display: block;
+  opacity: 0;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: 0 auto;
+  -o-background-size: 0 auto;
+  -webkit-background-size: 0 auto;
+  background-size: 0 auto;
+  -webkit-animation: pulse 1.5s 0s infinite normal ease forwards;
+  -moz-animation: pulse 1.5s 0s infinite normal ease forwards;
+  -o-animation: pulse 1.5s 0s infinite normal ease forwards;
+  animation: pulse 1.5s 0s infinite normal ease forwards;
+  background-image: url("https://jamesmuspratt.com/codepen/img/arrow-down.svg");
+  background-color: black;
+  background-repeat: no-repeat;
+}
+.scroll-down a:before, .scroll-down a:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("https://jamesmuspratt.com/codepen/img/arrow-down.svg") no-repeat center top;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.scroll-down a:before {
+  -webkit-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+  -moz-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+  -o-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+  animation: pulse 1.5s 0.25s infinite normal ease forwards;
+}
+.scroll-down a:after {
+  -webkit-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+  -moz-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+  -o-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+  animation: pulse 1.5s 0.5s infinite normal ease forwards;
+}
+.scroll-down a:hover {
+  background-color: coral;
+}
+
+/*--------------------------------------------------------
+    Boton CV
+-----------------------------------------------------------*/
+#boton {
+  margin: 0;
+  /*margin-top: 10px; */
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  position: relative;
+  left: 60%;
+  /*width: 100px;
+  height: 100px;*/
+}
+
+.col-md-3.center.espace {
+    margin-top: 1%;
+}
+
+.btn:active, .btn:focus, .btn:hover {
+    background-color: black;
+    border-color: black;
+    color: #fff;
+}
+
+.btn {
+    background-color: coral;
+    border-color: coral;
+    font-weight: bold;
+}
+
+.btn {
+    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+}
+
+.btn.btn-primario {
+    margin-top: 7%;
+    font-weight: bold;
+}
+
+
+/*--------------------------------------------------------
+   Botones redes sociales principio
+-----------------------------------------------------------*/
+.rounded-social-buttons {
+    text-align: center;
+     margin-top: 8%;
+}
+
+.rounded-social-buttons .social-button {
+    background: #000000;
+}
+
+.rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: black;
+  background: white;
+  border-color: black;
+}
+
+
+/*--------------------------------------------------------
+   Seccion Sobre mi
+-----------------------------------------------------------*/
+
+#descriptionMe{
+  text-align: justify;
+}
+
+.col-lg-8.pt-4.pt-lg-0.content {
+    margin-top: 2%;
+}
+.col-lg-4.imagen {
+     margin-top: 3%;
+}
+.img-fluid.me {
+    border-radius: 50%;
+}
+
+#research {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 760px) {
+  .scroll-down {
+    transform: rotate(-0deg);
+    left:50%;
+  }
+
+  .col-md-3.center {
+    text-align: center;
+}
+.col-md-3.center.espace {
+    margin-bottom: 7%;
+}
+.col-md-1.espace {
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.btn.btn-primario {
+    margin-top: 0%;
+}
+
+.rounded-social-buttons {
+    margin-top: 0%;
+}
+}
+
+@media (min-width: 992px) {
+
+  #mainNav .navbar-brand, #mainNav .navbar-brand:hover {
+    font-size: 1.75em;
+    transition: all .3s;
+    color: #212529;
+  }
+
+   #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: padding-top .3s, padding-bottom .3s;
+    border: none;
+    background-color: coral;
+  }
+
+  body {
+    overflow-x: hidden; 
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  #mainNav .navbar-brand, #mainNav .navbar-brand:hover {
+    font-size: 1.25em;
+    transition: all .3s;
+    color: #212529;
+  }
+
+  #inicio {
+      margin-top: 100px;
+  }
+
+  .img-fluid.me {
+      border-radius: 0%;
+  }
+
+}
+
+@media (max-width: 390px) {
+
+  #mainNav .navbar-brand, #mainNav .navbar-brand:hover {
+    font-size: 1em;
+    transition: all .3s;
+    color: #212529;
+}
+
+  #inicio {
+      margin-top: 100px;
+  }
+
+  .img-fluid.me {
+      border-radius: 0%;
+  }
+
+}
+
+/*--------------------------------------------------------
+   Destrezas
+-----------------------------------------------------------*/
+
+#coldestrezas {
+    margin-bottom: 70px;
+}
+
+#destrezas {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+/*--------------------------------------------------------
+    Intereses de investigación
+-----------------------------------------------------------*/
+#research-row{
+  margin-bottom: 20px;
+}
+
+#doughnut,#doughnut2,#doughnut3,#doughnut4,#doughnut5,#doughnut6,#doughnut7,#doughnut8{
+  position: absolute;
+}
+#skill1,#skill2,#skill3,#skill4, #skill5,#skill6,#skill7,#skill8{
+  position: relative;
+}
+#circle {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+  }
+  .masthead .masthead-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+  .masthead .masthead-subheading {
+    font-size: 1.5rem;
+  }
+}
+
+/*--------------------------------------------------------
+   Seccion Formacion
+-----------------------------------------------------------*/
+#experiencia {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/*--------------------------------------------------------
+    Iconos timeline Seccion Formacion
+-----------------------------------------------------------*/
+#uoc {
+  color: #000078;
+}
+.icon-uclm:before {
+  content: "\e900";
+}
+
+#ies {
+  font-size: 55px;
+  color: #263DA6;
+}
+
+#uclm {
+  font-size: 55px;
+  color: #990033;
+}
+.icon-mami:before {
+  content: "\6d";
+}
+
+#mami {
+  font-size: 22px;
+  color: black;
+}
+
+.icon-uoc:before {
+  content: "\75";
+}
+.icon-ies:before {
+  content: "\e900";
+}
+.icon-uclm-1:before {
+  content: "\76";
+}
+
+/*--------------------------------------------------------
+    Seccion Portfolio 
+-----------------------------------------------------------*/
+
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: coral;
+}
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+.portfolio-modal .close {
+  position: absolute;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #1abc9c;
+  opacity: 1;
+}
+
+#modal {
+    text-align: justify;
+   
+}
+#modalTitle {
+    text-align: center;
+   
+}
+
+.portfolio-modal .btn-git {
+    background-color: #444444;
+    color: white;
+}
+
+.portfolio-modal .btn-git:hover {
+    background-color: coral;
+    color: white;
+}
+
+
+/*--------------------------------------------------------
+   Seccion Contacto
+-----------------------------------------------------------*/
+
+section#contacto {
+    background-color: white;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section#contacto hr.divider {
+    max-width: 3.25rem;
+    border-width: .2rem;
+    border-color: var(--main-color);
+}
+
+.d-block {
+    color: black;
+}
+
+#iconsContact:hover {
+    color: coral;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------
+   Flecha Seccion Contacto
+-----------------------------------------------------------*/
+
+@keyframes animate-1 {
+  0%, 100% { 
+    transform: translateY(-30px); 
+    opacity: 0;
+  }
+  
+  40%, 50% { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animate-2 {
+  0%, 80%, 100% { 
+    transform: translateY(-30px); 
+    opacity: 0;
+  }
+  
+  40% { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animate-3 {
+  0%, 20%, 50%, 80%, 100% { 
+    transform: translateY(0);
+  }
+  
+  40% { 
+    transform: translateY(-30px);
+  }
+  
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  transform: rotate(90deg);
+}
+
+.arrow {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;  
+}
+.arrow--1 {
+    animation: animate-1 3s infinite;
+}
+
+.arrow--2 {
+    animation: animate-2 3s infinite;
+}
+
+.arrow--3 {
+    animation: animate-3 3s infinite;
+}
+
+.container2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 14rem;
+    margin-bottom: 3rem;
+}
+
+/*--------------------------------------------------------
+    Footer
+-----------------------------------------------------------*/
+
+.footer {
+    padding-top: 30px;
+    text-align: center;
+    background-color: coral;
+    padding-bottom: 30px;
+}
+
+.footer span.copyright {
+    padding-bottom: 40px;
+    font-size: 16px;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 0.7px;
+    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
