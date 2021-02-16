@@ -1,6 +1,6 @@
 :root {
-    --main-color: #fed136;
-    --main-color: #f708c1;
+    --main-color: coral;
+   
 }
 
 body {
@@ -13,34 +13,95 @@ body {
 -----------------------------------------------------------*/
 
 #mainNav {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  transition: padding-top .3s, padding-bottom .3s;
-  border: none;
-  background-color: coral;
+    background-color: coral
+}
+
+#mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    background-color: var(--main-color);
+    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-brand {
+    color: var(--main-color);
+    font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1rem;
+}
+
+#mainNav .navbar-brand.active,
+#mainNav .navbar-brand:active,
+#mainNav .navbar-brand:focus,
+#mainNav .navbar-brand:hover {
+    color: var(--main-color);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: .75em 0;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: black;
+    color: white;
 }
 
-#fullpage .section h1{
-    text-align: center;
-    color: black;
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active,
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+    color: coral;
 }
 
-#mainNav .navbar-brand {
-  color: var(--main-color);
-  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-size: 1rem;
+@media (min-width:992px) {
+    #mainNav {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        transition: padding-top .3s, padding-bottom .3s;
+        border: none;
+        background-color: coral
+    }
+
+    #mainNav .navbar-brand,
+    #mainNav .navbar-brand:hover {
+        font-size: 1.75em;
+        transition: all .3s;
+        color: #212529
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        padding: 1.1em 1em !important;
+        color: #212529;
+    }
+
+    #mainNav.navbar-shrink {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: #212529
+    }
+
+    #mainNav.navbar-shrink .nav-item .nav-link {
+        color: #fff;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0;
+        color: var(--main-color);
+    }
+
+    #mainNav.navbar-shrink .nav-item .nav-link.active  .nav-link:hover {
+    color: coral;
 }
 
-#mainNav .navbar-brand, #mainNav .navbar-brand:hover {
-  font-size: 1.75em;
-  transition: all .3s;
-  color: #212529;
 }
+
 
 #inicio {
 	margin-top: 80px;
@@ -438,7 +499,7 @@ body {
 
 @media (min-width: 992px) {
 
-  #mainNav .navbar-brand, #mainNav .navbar-brand:hover {
+  /*#mainNav .navbar-brand, #mainNav .navbar-brand:hover {
     font-size: 1.75em;
     transition: all .3s;
     color: #212529;
@@ -450,7 +511,7 @@ body {
     transition: padding-top .3s, padding-bottom .3s;
     border: none;
     background-color: coral;
-  }
+  }  */
 
   body {
     overflow-x: hidden; 
@@ -460,11 +521,11 @@ body {
 
 @media (max-width: 991px) {
 
-  #mainNav .navbar-brand, #mainNav .navbar-brand:hover {
+ /*#mainNav .navbar-brand, #mainNav .navbar-brand:hover {
     font-size: 1.25em;
     transition: all .3s;
     color: #212529;
-  }
+  } */
 
   #inicio {
       margin-top: 100px;
@@ -478,15 +539,15 @@ body {
 
 @media (max-width: 390px) {
 
-  #mainNav .navbar-brand, #mainNav .navbar-brand:hover {
+  /*#mainNav .navbar-brand, #mainNav .navbar-brand:hover {
     font-size: 1em;
     transition: all .3s;
     color: #212529;
-}
+} */
 
   #inicio {
       margin-top: 100px;
-  }
+  } 
 
   .img-fluid.me {
       border-radius: 0%;
