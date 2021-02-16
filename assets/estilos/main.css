@@ -13,7 +13,7 @@ body {
 -----------------------------------------------------------*/
 
 #mainNav {
-    background-color: coral
+    background-color: black
 }
 
 #mainNav .navbar-toggler {
@@ -28,7 +28,7 @@ body {
 }
 
 #mainNav .navbar-brand {
-    color: black;
+    color: var(--main-color);
     font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     font-size: 1rem;
 }
