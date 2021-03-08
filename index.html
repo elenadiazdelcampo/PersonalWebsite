@@ -35,6 +35,8 @@
     <meta name="author" content="Elena Díaz del Campo González-Gallego">
     <meta name="google-site-verification" content="jrbhr0SDhd9rJj5PJJKuaJ-AUgCtCNkY0y8rRlbwT4Y" />
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
     <title>Elena Díaz del Campo González-Gallego</title>
 
   </head>
@@ -114,7 +116,6 @@
               </div>
         </div>
     </section>
-
 
 
       <!-- Seccion Sobre mi  -->
@@ -1120,113 +1121,32 @@
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script type="text/javascript" src="js/agency.min.js"></script>
-    <script defer>
-        let cookies = () => {
-            //======================================================================
-            // COOKIES
-            //======================================================================
 
-            //-----------------------------------------------------
-            // Configuración
-            //-----------------------------------------------------
-            const urlsScriptsCookies = ['https://analytics.google.com', 'https://facebook.com'];
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
 
-            function contenidoScriptsCookies () {
-                ////////////  ¿Google Analítics? /////////////
-                ////////////  ¿Facebook Pixel? /////////////
-                ////////////  ¿Admob? /////////////
-                ////////////  etc  /////////////
-            }
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
 
-
-            //-----------------------------------------------------
-            // Variables
-            //-----------------------------------------------------
-            const seccionCookie = document.querySelector('section.cookies');
-            const cookieSi = document.querySelector('.cookies__boton--si');
-            const cookieNo = document.querySelector('.cookies__boton--no');
-            const nuevosScripts = document.querySelector('#nuevosScripts');
-
-            //-----------------------------------------------------
-            // Funciones
-            //-----------------------------------------------------
-
-            /**
-             * Método que oculta la sección de Cookie para siempre
-             */
-            function ocultarCookie() {
-                // Borra la sección de cookies en el HTML
-                seccionCookie.remove();
-            }
-
-            /**
-             * Método que marca las cookies como aceptadas
-             */
-            function aceptarCookies() {
-                // Oculta el HTML de cookies
-                ocultarCookie();
-                // Guarda que ha aceptado
-                localStorage.setItem('cookie', true);
-                // Tu codigo a ejecutar si aceptan las cookies
-                ejecutarSiAcepta();
-            }
-
-            /**
-             * Método que marca las cookies como denegadas
-             */
-            function denegarCookies() {
-                // Oculta el HTML de cookies
-                ocultarCookie();
-                // Guarda que ha aceptado
-                localStorage.setItem('cookie', false);
-            }
-
-            /**
-             * Método que ejecuta tu código si aceptan las cookies
-             */
-            function ejecutarSiAcepta() {
-                // Crea los <script>
-                urlsScriptsCookies.forEach((url) => {
-                    const nuevoScript = document.createElement('script');
-                    nuevoScript.setAttribute('src', url);
-                    nuevosScripts.appendChild(nuevoScript);
-                });
-                // Lanza los códigos
-                contenidoScriptsCookies();
-            }
-
-            /**
-             * Método que inicia la lógica
-             */
-            function iniciar() {
-                // Comprueba si en el pasado el usuario ha marcado una opción
-                if (localStorage.getItem('cookie') !== null) {
-                    if(localStorage.getItem('cookie') === 'true') {
-                        // Aceptó
-                        aceptarCookies();
-                    } else {
-                        // No aceptó
-                        denegarCookies();
-                    }
-                }
-            }
-
-            //-----------------------------------------------------
-            // Eventos
-            //-----------------------------------------------------
-            cookieSi.addEventListener('click',aceptarCookies, false);
-            cookieNo.addEventListener('click',denegarCookies, false);
-
-            return {
-                iniciar: iniciar
-            }
-        }
-
-        // Activa el código. Comenta si quieres desactivarlo.
-        cookies().iniciar();
-
-    });
+_qevents.push({
+qacct:"p-A3bWcAWRYpmBh",
+uid:"__INSERT_EMAIL_HERE__"
+});
 </script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-A3bWcAWRYpmBh.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
 
   </body>
 </html>
