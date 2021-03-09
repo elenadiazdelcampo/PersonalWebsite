@@ -1,0 +1,10 @@
+Sitemap: https://elenadiazdelcampo.github.io/sitemap.xml
+
+User-agent: *
+Disallow: /assets/
+Disallow: /js/
+Disallow: /icomoon/
+Disallow: /vendor/
+Disallow: /img/
+Disallow: /policies/
+Disallow: /README.md

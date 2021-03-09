@@ -899,3 +899,8 @@ svg {
     margin-bottom: 15px;
 }
 
+#descriptionC {
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+}
