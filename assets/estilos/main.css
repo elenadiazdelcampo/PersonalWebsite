@@ -844,6 +844,15 @@ svg {
     margin-right: 40px;
 }
 
+@media (max-width: 760px) {
+#nuevosScripts {
+    margin-right: 10px;
+}
+
+#nuevosScriptsP {
+    margin-right: 10px;
+}
+}
 
 /*--------------------------------------------------------
     Banner de cookies
@@ -889,3 +898,4 @@ svg {
 .cookies__botones {
     margin-bottom: 15px;
 }
+
