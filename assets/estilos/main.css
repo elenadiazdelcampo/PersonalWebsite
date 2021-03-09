@@ -832,6 +832,23 @@ svg {
     font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+#policies {
+    margin-bottom: 15px;
+}
+
+#nuevosScripts {
+    margin-right: 40px;
+}
+
+#nuevosScriptsP {
+    margin-right: 40px;
+}
+
+
+/*--------------------------------------------------------
+    Banner de cookies
+-----------------------------------------------------------*/
+
 .cookies {
      position: fixed;
      bottom: 0;
@@ -854,16 +871,10 @@ svg {
      text-align: center;
  }
 
-#policies {
-    margin-bottom: 15px;
-}
-
-#nuevosScripts {
-    margin-right: 40px;
-}
 
 #cookies {
     margin-top: 140px;
+    margin-bottom: 80px;
 }
 
 .cookies__texto {
