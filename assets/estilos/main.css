@@ -846,11 +846,11 @@ svg {
 
 @media (max-width: 760px) {
 #nuevosScripts {
-    margin-right: 10px;
+    margin-right: 0.5rem;
 }
 
 #nuevosScriptsP {
-    margin-right: 10px;
+    margin-right: 0.5rem;
 }
 }
 
