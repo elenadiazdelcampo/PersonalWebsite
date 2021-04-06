@@ -42,6 +42,7 @@
 <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
     <!-- Mi icono  -->
     <link rel="shortcut icon" href="./assets/icono.png" type="image/png">
@@ -55,12 +56,12 @@
 
     <title>Elena Díaz del Campo González-Gallego</title>
 
-    <script type="text/javascript">
-function enableSending() {
-        document.getElementById(btnform).disabled = !document.getElementById(checkbox).checked;
-    }
-</script>
-
+    
+<script>
+   function onSubmit(token) {
+     document.getElementById("form").submit();
+   }
+ </script>
   </head>
 
 
@@ -941,7 +942,7 @@ function enableSending() {
         <img src="img/symbol-01.png" alt="SYMBOL-MAIL">
       </span>
 
-      <form name="form" class="contact100-form validate-form flex-sb flex-w" action="https://formspree.io/f/mayayjnj"
+      <form name="form" id="form" class="contact100-form validate-form flex-sb flex-w" action="https://formspree.io/f/mayayjnj"
       method="POST">
         <span class="contact100-form-title">
           Si lo prefires, envíeme un mensaje
@@ -975,6 +976,12 @@ function enableSending() {
     <label for="checkbox" class="agree">Acepto la</label> <a href="./policies/privacidad.html">Política de Privacidad</a>
           
         </div>
+        <div class="container">
+          <button class="g-recaptcha" data-sitekey="6LepiJ4aAAAAAIL9w1RvQ5j-1B7ddSm7UtjZIAEp" data-callback='onSubmit' 
+        data-action='submit'
+        >Submit</button>
+        </div>
+        
         <div class="container-contact100-form-btn">
           <button id="btnform" name="submit" class="contact100-form-btn" >
             Enviar
