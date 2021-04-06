@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="assets/estilos/estilos.css">
     <link rel="stylesheet" type="text/css" href="assets/estilos/progressBar.css">
     <link rel="stylesheet" type="text/css" href="assets/estilos/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/estilos/util.css">
 
     <!-- Icons timelimne -->
     <link rel="stylesheet" type="text/css" href="icomoon/uoc/style.css">
@@ -27,6 +28,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+
     <!-- Mi icono  -->
     <link rel="shortcut icon" href="./assets/icono.png" type="image/png">
 
@@ -39,7 +55,14 @@
 
     <title>Elena Díaz del Campo González-Gallego</title>
 
+    <script type="text/javascript">
+function enableSending() {
+        document.getElementById(btnform).disabled = !document.getElementById(checkbox).checked;
+    }
+</script>
+
   </head>
+
 
 
   <body id="topPage">
@@ -85,7 +108,7 @@
 
   <section class="cookies">
     <h2 class="cookies__titulo">¿Aceptas las Cookies?</h2> 
-    <p class="cookies__texto">Utilizamos cookies propias y de terceros para fines analíticos y para mostrarte publicidad personalizada en base a un perfil elaborado a partir de sus hábitos de navegación. Clica AQUÍ para obtener más información. Puede aceptar todas las cookies pulsando el botón 'Aceptar' o configurar o rechazar su uso clicando AQUÍ. </p>
+    <p class="cookies__texto">Utilizamos cookies propias y de terceros para fines analíticos y para mostrarte publicidad personalizada en base a un perfil elaborado a partir de sus hábitos de navegación. Clica AQUÍ para obtener más información. Puede aceptar todas las cookies pulsando el botón 'Aceptar' o rechazar su uso pulsando el botón 'Rechazar'. </p>
     <div class="cookies__botones">
         <button class="cookies__boton cookies__boton--no">Rechazar</button>
         <button class="cookies__boton cookies__boton--si">Aceptar</button>
@@ -908,6 +931,117 @@
     </div>
   </div>
 </section>
+  <section class="page-section" id="contacti">
+
+  <div class="container" id="cont">
+    
+<div class="row" id="contact">
+    <div class="wrap-contact100">
+      <span class="contact100-form-symbol">
+        <img src="img/symbol-01.png" alt="SYMBOL-MAIL">
+      </span>
+
+      <form name="form" class="contact100-form validate-form flex-sb flex-w" action="https://formspree.io/elena-diaz1998@hotmail.es"
+      method="POST">
+        <span class="contact100-form-title">
+          Si lo prefires, envíeme un mensaje
+        </span>
+
+        <div class="container" id="rgpd">
+          Al rellenar este formulario estás dando el <b>consentimiento expreso</b> al tratamiento de tus datos (guardar tus datos y el mensaje del formulario en el correo) conforme al <b>Reglamento General de Protección de Datos (RGPD)</b>. <br><br>
+          El <b>responsable</b> de este sitio web es Elena Díaz del Campo González-Gallego, cuya <b>finalidad</b> es proporcionar información sobre mi formación y mis servicios, con la <b>legitimación</b> de tu consentimiento otorgado en el formulario. <br><br>
+          El <b>destinatario</b> de tus datos es Elena Díaz del Campo González-Gallego (En su correo personal) y podrás ejercer tus <b>derechos de acceso, rectificación, limitación o supresión de tus datos</b> (ver la política de privacidad).
+        </div>
+
+        <div class="wrap-input100 rs1 validate-input" data-validate = "Nombre es obligatorio">
+          <input class="input100" id="name" type="text" name="name" placeholder="Nombre">
+          <span class="focus-input100"></span>
+        </div>
+
+        <div class="wrap-input100 rs1 validate-input" data-validate = "Email es obligatorio: e@a.z">
+          <input id="email" class="input100" type="text" name="email" placeholder="Email">
+          <span class="focus-input100"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Mensaje es obligatorio">
+          <textarea class="input100" id="comentario" name="message" placeholder="Escríbame un mensaje"></textarea>
+          <span class="focus-input100"></span>
+        </div>
+
+
+        <div class="container validate-input"data-validate = "Acepatr la política es obligatorio">
+          <input type="checkbox" class="checkbox" name="checkbox" id="legal"/> 
+    <label for="checkbox" class="agree">Acepto la</label> <a href="./policies/privacidad.html">Política de Privacidad</a>
+          
+        </div>
+        <div class="container-contact100-form-btn">
+          <button id="btnform" name="submit" class="contact100-form-btn" >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!--<section class="page-section" id="contact">
+  <div class="container" id="contact">
+    <div class="row">
+       <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-center header">Contact us</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-6">
+                                <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+</section> -->
 
 <!-- Footer -->
 <footer class="footer">
@@ -1117,6 +1251,7 @@
             </div>
         </div>
 
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <!-- Optional JavaScript -->
     <script type="text/javascript" src="./js/circle2.js"></script>
     <script type="text/javascript" src="./js/fullpage.js"></script>
@@ -1130,6 +1265,7 @@
       });
     </script>
 
+ 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -1138,6 +1274,15 @@
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script type="text/javascript" src="js/agency.min.js"></script>
+    <!--===============================================================================================-->
+
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+  <script src="vendor/daterangepicker/moment.min.js"></script>
+  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+<script src="vendor/countdowntime/countdowntime.js"></script>
+<script src="js/main.js"></script>
     
     <script defer>
 let cookies = () => {
@@ -1247,6 +1392,8 @@ let cookies = () => {
 cookies().iniciar();
 
 </script>
+
+
 
   </body>
 </html>
