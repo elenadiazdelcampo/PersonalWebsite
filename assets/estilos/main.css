@@ -879,6 +879,26 @@ svg {
      width: 8rem;
      text-align: center;
  }
+ 
+.cookies__botonn {
+     background: initial;
+     border: 2px solid white;
+     padding: 1rem;
+     font-size: 1rem;
+     color: white;
+     width: 9rem;
+     text-align: center;
+ }
+
+.cookies__botonnn {
+     background: initial;
+     border: 2px solid white;
+     padding: 1rem;
+     font-size: 1rem;
+     color: white;
+     width: 13rem;
+     text-align: center;
+ }
 
 
 #cookies {
