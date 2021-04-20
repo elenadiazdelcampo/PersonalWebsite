@@ -120,27 +120,39 @@
   <section class="cookies">
     
     <h2 class="cookies__titulo">¿Aceptas las Cookies?</h2> 
-    <p class="cookies__texto">Utilizamos cookies propias y de terceros para fines analíticos y para mostrarte publicidad personalizada en base a un perfil elaborado a partir de sus hábitos de navegación. Clica AQUÍ para obtener más información. Puede aceptar todas las cookies pulsando el botón 'Aceptar' o rechazar su uso pulsando el botón 'Rechazar'. </p>
+    <p class="cookies__texto">Utilizamos cookies propias y de terceros para fines analíticos y para mostrarte publicidad personalizada en base a un perfil elaborado a partir de sus hábitos de navegación. Clica <a href="./policies/cookies.html">AQUÍ</a> para obtener más información. Puede aceptar todas las cookies pulsando el botón 'Aceptar todas', aceptar solo las necesarias pulsando el botón 'Aceptar solo necesarias' o rechazar su uso pulsando el botón 'Rechazar'. </p>
     
     <div class="cookies__botones">
         <button class="cookies__boton cookies__boton--no">Rechazar</button>
         <button class="cookies__boton cookies__boton--si">Aceptar todas</button>
         <button class="cookies__boton cookies__boton--sii">Aceptar solo necesarias</button>
-         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Mostrar detalles</button>
+         <button class="boton" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="FbotonOn()" id="botonOn">Mostrar detalles ˅</button>
     </div> 
     <div class="container" >
     <div class="collapse" id="collapseExample">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#declaracion" type="button" role="tab" aria-controls="home" aria-selected="true">Declaración de cookies</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#acercacookies" type="button" role="tab" aria-controls="contact" aria-selected="false">Acerca de las cookies</button>
         </li>
       </ul>
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Cookies analíticas: </div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+  <div class="tab-pane fade show active" id="declaracion" role="tabpanel" aria-labelledby="home-tab">
+<ul id="inforcookies">
+                      <li><i class="icofont-rounded-right"></i>
+                        <b>Necesarias:</b> Las cookies necesarias ayudan a hacer una página web utilizable activando funciones básicas como la navegación en la página y el acceso a áreas seguras de la página web. Las página web no puede funcionar adecuadamente sin estas cookies. </li>
+                        <li><i class="icofont-rounded-right"></i>
+<b>Estadística:</b> las cookies estadísticas ayudan a los propietarios de páginas web a comprender cómo interactúan los visitantes con las páginas web reuniendo y proporcionando información de forma anónima. Se activarán seleccionando la opción Aceptar todas. 
+</li>
+ </div>
+  <div class="tab-pane fade" id="acercacookies" role="tabpanel" aria-labelledby="contact-tab"><p id="">Las cookies son pequeños archivos de texto que las páginas web pueden utilizar para hacer más eficiente la experiencia del usuario.
+  La ley afirma que podemos almacenar cookies en su dispositivo si son estrictamente necesarias para el funcionamiento de esta página. Para todos los demás tipos de cookies necesitamos su permiso.
+  Esta página utiliza tipos diferentes de cookies. Algunas cookies son colocadas por servicios de terceros que aparecen en nuestras páginas.
+  En cualquier momento puede cambiar o retirar su consentimiento desde la Declaración de cookies en nuestro sitio web.
+  Obtenga más información sobre quiénes somos, cómo puede contactarnos y cómo procesamos los datos personales en nuestra Política de privacidad.
+  Al contactarnos respecto a su consentimiento, por favor, indique el ID y la fecha de su consentimiento. </p></div>
 </div>
 </div>
 </div>
@@ -1479,7 +1491,15 @@ cookies().iniciar();
 
 </script>
 
+<script>
+var valor = true
+function FbotonOn() {
+  var uno = document.getElementById('botonOn');
+  valor?uno.innerText = "Ocultar detalles ^":uno.innerText = "Mostrar detalles ˅";
+  valor=!valor
+}
 
+</script>
 
   </body>
 </html>

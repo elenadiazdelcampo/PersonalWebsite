@@ -1289,3 +1289,27 @@ label {
     background-color: #D3D3D3;
     margin-bottom: 20px;
 }
+
+#acercacookies{
+  text-align: justify;
+}
+
+#declaracion{
+  text-align: justify;
+}
+
+#home-tab {
+    background-color: coral;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    background-color: #ffbca4;
+    border-width: medium;
+}
+
+#inforcookies {
+  margin-top: 15px;
+}
