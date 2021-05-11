@@ -79,15 +79,40 @@
 
   <body id="topPage">
 
-  <div class="social-bar">
-    <a href="https://www.facebook.com/DevCode.la" class="icon-sphere" target="_blank"></a>
-    <a href="https://twitter.com/DevCodela" class="icon icon-twitter" target="_blank"></a>
+  <!--<div class="social-bar">
+    <a href="https://www.facebook.com/DevCode.la" target="_blank"><i class="fas fa-cookie-bite"></i></a>
+    <a href="https://twitter.com/DevCodela" target="_blank"><i class="fas fa-cookie-bite"></i></a>
     <a href="https://www.youtube.com/c/devcodela" class="icon icon-youtube" target="_blank"></a>
     <a href="https://www.instagram.com/devcodela/" class="icon icon-instagram" target="_blank"></a>
-  </div>
+  </div> -->
+
+<div id="div-totop" class="cmn-divfloat">
+    <a href="#topPage" class="btn btn-primary cmn-btncircle">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</div>
 
 
-
+<div class="sticky-container">
+    <ul class="sticky">
+        <li>
+            <img src="img/galleta.png" width="32" height="32">
+            <p><a href="https://www.facebook.com/programacionnet" target="_blank">Elimina las<br>Cookies</a></p>
+        </li>
+        <li>
+            <img src="https://img.icons8.com/fluent/48/000000/twitter.png" width="32" height="32">
+            <p><a href="https://twitter.com/noprog" target="_blank">Sígueme en<br>Twitter</a></p>
+        </li>
+        <li>
+            <img src="https://img.icons8.com/fluent/80/000000/github.png" width="32" height="32">
+            <p><a href="https://github.com/elenadiazdelcampo" target="_blank">Sígueme en<br>GitHub</a></p>
+        </li>
+        <li>
+            <img src="https://img.icons8.com/fluent/80/000000/linkedin.png" width="32" height="32">
+            <p><a href="https://es.linkedin.com/in/elena-d%C3%ADaz-del-campo-gonz%C3%A1lez-gallego-50b969194" target="_blank">Síguema en<br>LinkedIn</a></p>
+        </li>
+    </ul>
+</div>
    <!-- Menu de Navegacion -->
    
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -1114,7 +1139,8 @@
           <a  class="copyright" href="./policies/sitemap.html" style="color:black">Mapa del sitio</a>
         </div>
         <div class="col-md-12" id="policies">
-          <a class="copyright" id="setCookie" href="./policies/cookies.html" style="color:black"></a>
+          <!--<a class="btn btn-primary btn-lg" href="#cookies" onclick="deleteCookies();" role="button">Eliminar cookies</a>-->
+          <a class="" id="setCookie" href="" onclick="deleteCookies();" role="button" style="color:black"><b>Eliminar cookies</b></a>
        </div>
         <div class="col-md-12">
           <span class="copyright">Elena Díaz del Campo González-Gallego © Copyright 2021</span>
@@ -1415,9 +1441,7 @@ let cookies = () => {
         ocultarCookie();
         // Guarda que ha aceptado
         localStorage.setItem('cookiesNecesarias', true);
-        const div = document.querySelector("setCookie");  
-        div.textContent = "Eliminar cookie";
-
+        
         // Tu codigo a ejecutar si aceptan las cookies
         ejecutarSiAceptaNecesarias();
     }
@@ -1508,6 +1532,32 @@ function FbotonOn() {
   valor=!valor
 }
 
+</script>
+
+ <script delete>
+
+  function deleteCookies() {
+    localStorage.removeItem('cookie');
+    localStorage.removeItem('cookiesNecesarias');
+    localStorage.removeItem('cookie-id');
+}
+
+  </script>
+
+  <script>
+    (function() {
+    //a partir de que punto del scroll vertical de la ventana mostrará el botón
+    const ishow = 115
+    const $divtop = document.getElementById("div-totop")
+    window.addEventListener("scroll", function() {
+        if(document.documentElement.scrollTop > ishow){
+            $divtop.style.display = "inherit"
+        }
+        else {
+            $divtop.style.display = "none"
+        }
+    })
+})()
 </script>
 
   </body>
