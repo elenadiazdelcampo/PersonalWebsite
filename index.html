@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="assets/estilos/progressBar.css">
     <link rel="stylesheet" type="text/css" href="assets/estilos/main.css">
     <link rel="stylesheet" type="text/css" href="assets/estilos/util.css">
+    <link rel="stylesheet" type="text/css" href="assets/estilos/font.css">
 
     <!-- Icons timelimne -->
     <link rel="stylesheet" type="text/css" href="icomoon/uoc/style.css">
@@ -78,6 +79,13 @@
 
   <body id="topPage">
 
+  <div class="social-bar">
+    <a href="https://www.facebook.com/DevCode.la" class="icon-sphere" target="_blank"></a>
+    <a href="https://twitter.com/DevCodela" class="icon icon-twitter" target="_blank"></a>
+    <a href="https://www.youtube.com/c/devcodela" class="icon icon-youtube" target="_blank"></a>
+    <a href="https://www.instagram.com/devcodela/" class="icon icon-instagram" target="_blank"></a>
+  </div>
+
 
 
    <!-- Menu de Navegacion -->
@@ -129,34 +137,35 @@
          <button class="boton" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="FbotonOn()" id="botonOn">Mostrar detalles ˅</button>
     </div> 
     <div class="container" >
-    <div class="collapse" id="collapseExample">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#declaracion" type="button" role="tab" aria-controls="home" aria-selected="true">Declaración de cookies</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#acercacookies" type="button" role="tab" aria-controls="contact" aria-selected="false">Acerca de las cookies</button>
-        </li>
-      </ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="declaracion" role="tabpanel" aria-labelledby="home-tab">
-<ul id="inforcookies">
-                      <li><i class="icofont-rounded-right"></i>
-                        <b>Necesarias:</b> Las cookies necesarias ayudan a hacer una página web utilizable activando funciones básicas como la navegación en la página y el acceso a áreas seguras de la página web. Las página web no puede funcionar adecuadamente sin estas cookies. </li>
-                        <li><i class="icofont-rounded-right"></i>
-<b>Estadística:</b> las cookies estadísticas ayudan a los propietarios de páginas web a comprender cómo interactúan los visitantes con las páginas web reuniendo y proporcionando información de forma anónima. Se activarán seleccionando la opción Aceptar todas. 
-</li>
- </div>
-  <div class="tab-pane fade" id="acercacookies" role="tabpanel" aria-labelledby="contact-tab"><p id="">Las cookies son pequeños archivos de texto que las páginas web pueden utilizar para hacer más eficiente la experiencia del usuario.
-  La ley afirma que podemos almacenar cookies en su dispositivo si son estrictamente necesarias para el funcionamiento de esta página. Para todos los demás tipos de cookies necesitamos su permiso.
-  Esta página utiliza tipos diferentes de cookies. Algunas cookies son colocadas por servicios de terceros que aparecen en nuestras páginas.
-  En cualquier momento puede cambiar o retirar su consentimiento desde la Declaración de cookies en nuestro sitio web.
-  Obtenga más información sobre quiénes somos, cómo puede contactarnos y cómo procesamos los datos personales en nuestra Política de privacidad.
-  Al contactarnos respecto a su consentimiento, por favor, indique el ID y la fecha de su consentimiento. </p></div>
-</div>
-</div>
-</div>
-</section>
+      <div class="collapse" id="collapseExample">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#declaracion" type="button" role="tab" aria-controls="home" aria-selected="true">Declaración de cookies</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#acercacookies" type="button" role="tab" aria-controls="contact" aria-selected="false">Acerca de las cookies</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="declaracion" role="tabpanel" aria-labelledby="home-tab">
+            <p id="textoCookie">En este sitio web se hace uso de los siguientes tipos de cookies. Para obtener más información lea la <a href="./policies/cookies.html">Política de Cookies</a>:</p>
+            <ul id="inforcookies">
+              <li><i class="icofont-rounded-right"></i><b>Necesarias:</b> Las cookies necesarias ayudan a hacer una página web utilizable activando funciones básicas como la navegación en la página y el acceso a áreas seguras de la página web. Las página web no puede funcionar adecuadamente sin estas cookies. </li>
+              <li><i class="icofont-rounded-right"></i><b>Estadística:</b> las cookies estadísticas ayudan a los propietarios de páginas web a comprender cómo interactúan los visitantes con las páginas web reuniendo y proporcionando información de forma anónima. Se activarán seleccionando la opción Aceptar todas. </li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="acercacookies" role="tabpanel" aria-labelledby="contact-tab"><p id="">Las cookies son pequeños archivos de texto que las páginas web pueden utilizar para hacer más eficiente la experiencia del usuario.
+          La ley afirma que se puede almacenar cookies en su dispositivo si son estrictamente necesarias para el funcionamiento de esta página. Para todos los demás tipos de cookies se necesita su permiso. <br>
+          Esta página utiliza tipos diferentes de cookies. Algunas cookies son colocadas por servicios de terceros que aparecen en la página. <br>
+          En cualquier momento puede cambiar o retirar su consentimiento desde la <a href="./policies/cookies.html">Declaración de cookies</a> en mi sitio web.
+          Obtenga más información sobre quién soy, cómo puede contactarme y cómo proceso los datos personales en mi <a href="./policies/privacidad.html">Política de privacidad</a>.
+          Al contactarme respecto a su consentimiento, por favor, indique el ID y la fecha de su consentimiento. </p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
 
     <!-- Seccion Inicio  -->
 
@@ -991,9 +1000,9 @@
         </span>
 
         <div class="container" id="rgpd">
-          Al rellenar este formulario estás dando el <b>consentimiento expreso</b> al tratamiento de tus datos (guardar tus datos y el mensaje del formulario en el correo) conforme al <b>Reglamento General de Protección de Datos (RGPD)</b>. <br><br>
-          El <b>responsable</b> de este sitio web es Elena Díaz del Campo González-Gallego, cuya <b>finalidad</b> es proporcionar información sobre mi formación y mis servicios, con la <b>legitimación</b> de tu consentimiento otorgado en el formulario. <br><br>
-          El <b>destinatario</b> de tus datos es Elena Díaz del Campo González-Gallego (En su correo personal) y podrás ejercer tus <b>derechos de acceso, rectificación, limitación o supresión de tus datos</b> (ver la <a href="./policies/privacidad.html">Política de Privacidad</a>).
+         <!-- Al rellenar este formulario estás dando el <b>consentimiento expreso</b> al tratamiento de tus datos (guardar tus datos y el mensaje del formulario en el correo) conforme al <b>Reglamento General de Protección de Datos (RGPD)</b>. <br><br>-->
+          El <b>responsable</b> de este sitio web es Elena Díaz del Campo González-Gallego, cuya <b>finalidad</b> es proporcionar información sobre mi formación y mis servicios respondiendo al mensaje que me envíes a través de este formulario, con la <b>legitimación</b> de tu consentimiento otorgado en el formulario. <br><br>
+          El <b>destinatario</b> de tus datos es Elena Díaz del Campo González-Gallego (En su correo personal que también cumple con el RGPD) y podrás ejercer tus <b>derechos de acceso, rectificación, limitación o supresión de tus datos</b> (ver la <a href="./policies/privacidad.html">Política de Privacidad</a>).
         </div>
         <input type="hidden" name="_subject" value="Contacto página web" />
         <input type="text" name="_gotcha" style="display:none" />
@@ -1103,6 +1112,10 @@
           <a class="copyright" id="nuevosScriptsP" href="./policies/privacidad.html" style="color:black">Política de privacidad</a>
           <a class="copyright" id="nuevosScriptsP" href="./policies/aviso_legal.html" style="color:black">Aviso legal</a>
           <a  class="copyright" href="./policies/sitemap.html" style="color:black">Mapa del sitio</a>
+        </div>
+        <div class="row align-items-center">
+        <div class="col-md-12" id="policies">
+          <a class="copyright" id="setCookie" href="./policies/cookies.html" style="color:black"></a>
         </div>
         <div class="col-md-12">
           <span class="copyright">Elena Díaz del Campo González-Gallego © Copyright 2021</span>
@@ -1338,21 +1351,15 @@
     
     <script defer>
 let cookies = () => {
-    //======================================================================
-    // COOKIES
-    //======================================================================
 
     //-----------------------------------------------------
     // Configuración
     //-----------------------------------------------------
-    const urlsScriptsCookies = ['https://analytics.google.com', 'https://facebook.com'];
-    const urlsScriptsCookiesNecesarias = ['https://facebook.com'];
+    const urlsScriptsCookies = ['https://analytics.google.com'];
+    const urlsScriptsCookiesNecesarias = ['https://elenadiazdelcampo.github.io/'];
 
     function contenidoScriptsCookies () {
-        ////////////  ¿Google Analítics? /////////////
-        ////////////  ¿Facebook Pixel? /////////////
-        ////////////  ¿Admob? /////////////
-        ////////////  etc  /////////////
+      
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -1409,6 +1416,9 @@ let cookies = () => {
         ocultarCookie();
         // Guarda que ha aceptado
         localStorage.setItem('cookiesNecesarias', true);
+        const div = document.querySelector("setCookie");  
+        div.textContent = "Eliminar cookie";
+
         // Tu codigo a ejecutar si aceptan las cookies
         ejecutarSiAceptaNecesarias();
     }
