@@ -867,7 +867,7 @@ svg {
      color: white;
      font-family: arial;
      text-align: center;
-     z-index: 100;
+     z-index: 1100;
  }
 
  .cookies__boton {
@@ -887,8 +887,35 @@ svg {
 }
 
 .cookies__texto {
-    margin-left: 10rem;
-margin-right: 10rem;
+    margin-left: 3rem;
+margin-right: 3rem;
+}
+
+@media (max-width: 760px) {
+  #cookies {
+    z-index: 1100;
+}
+.cookies__texto {
+    margin-left: 1rem;
+margin-right: 1rem;
+font-size: 12px;
+}
+
+.cookies__titulo {
+    font-size: 18px;
+}
+
+.cookies__boton {
+     background: initial;
+     border: 2px solid white;
+     padding: 0.3rem;
+     font-size: 1rem;
+     color: white;
+     width: 10rem;
+     text-align: center;
+     font-size: 12px;
+     margin-bottom: 10px;
+ }
 }
 
 .cookies__titulo {
@@ -1377,11 +1404,13 @@ label {
 */
 .cmn-divfloat {
     position: fixed !important;
-    bottom: 45px;
+    bottom: 65px;
     right: 15px;
     display: none;
-    z-index: 1100;
+    z-index: 1000;
 }
+
+
 .cmn-btncircle {
     width: 40px !important;
     height: 40px !important;
@@ -1392,6 +1421,9 @@ label {
 }
 
 
+
+
+
 .sticky-container{
     padding:0px;
     margin:0px;
@@ -1399,7 +1431,7 @@ label {
     right:-130px;
     top:230px;
     width:210px;
-    z-index: 1100;
+    z-index: 1000;
 }
 .sticky li{
     list-style-type:none;
