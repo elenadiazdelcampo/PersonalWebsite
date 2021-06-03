@@ -163,13 +163,14 @@
   
   <!--<input type="submit" class="cookies__boton cookies__boton--sii">Aceptar solo seleccionada/>-->
  <!-- <input type="submit" class="cookies__boton cookies__boton--sii"/>
-</form> -->
+</form> 
+onclick="if(this.checked)localStorage.setItem(this.id,this.value);else localStorage.removeItem(this.id);"-->
 <form action="" method="get">
   <label>
     <input name="checkbox" type="checkbox" id="analiticas" value="true" onclick="if(this.checked)localStorage.setItem(this.id,this.value);else localStorage.removeItem(this.id);"/>Analíticas <br/>
   </label>
   <label>
-    <input name="checkbox2" type="checkbox" id="necesarias" value="true" onclick="if(this.checked)localStorage.setItem(this.id,this.value);else localStorage.removeItem(this.id);"/>Necesarias <br/>
+    <input name="checkbox2" type="checkbox" id="necesarias" value="true" checked disabled/>Necesarias <br/>
   </label>
   
   <label>
@@ -1495,7 +1496,7 @@ let cookies = () => {
     }
 
      /**
-      * Método que ejecuta tu código si aceptan las cookies necesarias
+      * Método que ejecuta tu código si aceptan las cookies seleccionadas
       */
     function ejecutarSiAceptaNecesarias() {
         // Crea los <script>
@@ -1507,7 +1508,7 @@ let cookies = () => {
         });
         // Lanza los códigos
         //contenidoScriptsCookiesNecesarias();
-        if (localStorage.getItem('analiticas') == 'true') {
+        if (localStorage.getItem('analiticas') == 'true') || {
             contenidoScriptsCookies();
             
         } else {
