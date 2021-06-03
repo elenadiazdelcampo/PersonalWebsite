@@ -259,6 +259,195 @@ Cuando se produzcan cambios significativos en esta Política de Cookies, estos s
       });
     </script>
 
+
+       <script defer>
+let cookies = () => {
+
+    //-----------------------------------------------------
+    // Configuración
+    //-----------------------------------------------------
+    const urlsScriptsCookies = ['https://analytics.google.com'];
+    const urlsScriptsCookiesNecesarias = ['https://elenadiazdelcampo.github.io/'];
+
+    function contenidoScriptsCookies () {
+      
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WBYWSEMTTG');
+    }
+
+    function contenidoScriptsCookiesNecesarias () {
+        
+       localStorage.setItem('cookie-id', true);
+    }
+
+
+
+    //-----------------------------------------------------
+    // Variables
+    //-----------------------------------------------------
+    const seccionCookie = document.querySelector('section.cookies');
+    const cookieSi = document.querySelector('.cookies__boton--si');
+    const cookieNo = document.querySelector('.cookies__boton--no');
+    const cookieNecesarias = document.querySelector('.cookies__boton--sii');
+    const nuevosScripts = document.querySelector('#nuevosScripts');
+    const nuevosScriptsP = document.querySelector('#nuevosScriptsP');
+
+    //-----------------------------------------------------
+    // Funciones
+    //-----------------------------------------------------
+
+    /**
+      * Método que oculta la sección de Cookie para siempre
+      */
+    function ocultarCookie() {
+        // Borra la sección de cookies en el HTML
+        seccionCookie.remove();
+    }
+
+    /**
+      * Método que marca las cookies como aceptadas
+      */
+    function aceptarCookies() {
+        // Oculta el HTML de cookies
+        ocultarCookie();
+        // Guarda que ha aceptado
+        localStorage.setItem('cookie', true);
+        // Tu codigo a ejecutar si aceptan las cookies
+        ejecutarSiAcepta();
+    }
+
+     function aceptarCookiesNecesarias() {
+        // Oculta el HTML de cookies
+         
+        ocultarCookie();
+        // Guarda que ha aceptado
+        localStorage.setItem('cookiesNecesarias', true);
+        
+        // Tu codigo a ejecutar si aceptan las cookies
+        ejecutarSiAceptaNecesarias();
+    }
+
+    /**
+      * Método que marca las cookies como denegadas
+      */
+    function denegarCookies() {
+        // Oculta el HTML de cookies
+        ocultarCookie();
+        // Guarda que ha aceptado
+        localStorage.setItem('cookie', false);
+    }
+
+    /**
+      * Método que ejecuta tu código si aceptan las cookies
+      */
+    function ejecutarSiAcepta() {
+        // Crea los <script>
+        urlsScriptsCookies.forEach((url) => {
+            const nuevoScript = document.createElement('script');
+            nuevoScript.setAttribute('src', url);
+            nuevosScripts.appendChild(nuevoScript);
+            nuevosScriptsP.appendChild(nuevoScript);
+        });
+        // Lanza los códigos
+        contenidoScriptsCookies();
+    }
+
+     /**
+      * Método que ejecuta tu código si aceptan las cookies seleccionadas
+      */
+    function ejecutarSiAceptaNecesarias() {
+        // Crea los <script>
+        urlsScriptsCookies.forEach((url) => {
+            const nuevoScript = document.createElement('script');
+            nuevoScript.setAttribute('src', url);
+            nuevosScripts.appendChild(nuevoScript);
+            nuevosScriptsP.appendChild(nuevoScript);
+        });
+        // Lanza los códigos
+        //contenidoScriptsCookiesNecesarias();
+        if (localStorage.getItem('analiticas') === 'true') {
+            contenidoScriptsCookies();
+            
+        } else {
+          contenidoScriptsCookiesNecesarias();
+        }
+    }
+
+    /**
+      * Método que inicia la lógica
+      */
+    function iniciar() {
+        // Comprueba si en el pasado el usuario ha marcado una opción
+        if (localStorage.getItem('cookie') !== null) {
+            if(localStorage.getItem('cookie') === 'true') {
+                // Aceptó
+                aceptarCookies();
+            } else if (localStorage.getItem('cookiesNecesarias') === 'true') {
+                // Aceptó
+                aceptarCookiesNecesarias();
+
+                
+            } else {
+                // No aceptó
+                denegarCookies();
+            }
+        }
+    }
+
+    //-----------------------------------------------------
+    // Eventos
+    //-----------------------------------------------------
+    cookieSi.addEventListener('click',aceptarCookies, false);
+    cookieNecesarias.addEventListener('click',aceptarCookiesNecesarias, false);
+    cookieNo.addEventListener('click',denegarCookies, false);
+
+    return {
+        iniciar: iniciar
+    }
+}
+
+// Activa el código. Comenta si quieres desactivarlo.
+cookies().iniciar();
+
+</script>
+
+<script type="text/javascript">
+  
+  function comprobar() {
+         var pulsado = false;//variable de comprobación
+         var opciones = document.estacion; //array de elementos
+         var elegido = -1; //número del elemento elegido en el array
+         for (i=0;i<opciones.length;i++) { //bucle de comprobación
+               if (opciones[i].checked == true) {
+               pulsado = true 
+               elegido = i //número del elemento elegido en el array
+              localStorage.setItem(opciones[elegido].value, true);
+               }
+             }
+         if (pulsado == true) { //mensaje de formulario válido
+            miOpcion = opciones[elegido].value
+            alert("Has elegido la opción: " + miOpcion + "\n El formulario ha sido enviado.")
+            }
+         else { //mensaje de formulario no válido.
+            alert("no has elegido ninguna opción. \n Elige una opción para que el formulario pueda ser enviado")
+            return false //el formulario no se envía.
+            } 
+         }
+</script>
+
+<script>
+var valor = true
+function FbotonOn() {
+  var uno = document.getElementById('botonOn');
+  valor?uno.innerText = "Ocultar detalles ^":uno.innerText = "Mostrar detalles ˅";
+  valor=!valor
+}
+
+</script>
+
     <script>
       function eliminarCookies() {
           localStorage.removeItem('cookie');
