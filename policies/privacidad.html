@@ -80,7 +80,68 @@
     </div>
   </nav>
 
+ <section class="cookies">
+    
+    <h2 class="cookies__titulo">¿Aceptas las Cookies?</h2> 
+    <p class="cookies__texto">Soy Elena Díaz del Campo, propietaria de esta página web en la que utilizo cookies propias y de terceros para fines analíticos y para mostrarte publicidad personalizada en base a un perfil elaborado a partir de sus hábitos de navegación. Clica <a href="./policies/cookies.html">AQUÍ</a> para obtener más información. Puede aceptar todas las cookies pulsando el botón 'Aceptar todas', aceptar solo las necesarias pulsando el botón 'Aceptar solo necesarias' o rechazar su uso pulsando el botón 'Rechazar'. </p>
+    
+    <div class="cookies__botones">
+   <!--<form name="formulario" action="#" onsubmit="return comprobar()">
+  <input type="checkbox" name="estacion" value="analiticas" />Analíticas <br/>
+  <input type="checkbox" name="estacion" value="necesarias" />Necesarias <br/>-->
+  
+  <!--<input type="submit" class="cookies__boton cookies__boton--sii">Aceptar solo seleccionada/>-->
+ <!-- <input type="submit" class="cookies__boton cookies__boton--sii"/>
+</form> 
+onclick="if(this.checked)localStorage.setItem(this.id,this.value);else localStorage.removeItem(this.id);"-->
+<form action="" method="get">
+  <label>
+    <input name="checkbox" type="checkbox" id="analiticas" value="true" onclick="if(this.checked)localStorage.setItem(this.id,this.value);else localStorage.removeItem(this.id);"/>Analíticas <br/>
+  </label>
+  <label>
+    <input name="checkbox2" type="checkbox" id="necesarias" value="true" checked disabled/>Necesarias <br/>
+  </label>
+  
+  <label>
+    <input type="submit" name="button" id="button" value="Aceptar seleccionadas" class="cookies__boton cookies__boton--sii"/>
+  </label>
 
+   <button class="cookies__boton cookies__boton--no">Rechazar</button>
+        <button class="cookies__boton cookies__boton--si">Aceptar todas</button>
+        <!--<button onclick="comprobar()" class="cookies__boton cookies__boton--sii">Aceptar solo seleccionada</button>-->
+         <button class="boton" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="FbotonOn()" id="botonOn">Mostrar detalles ˅</button>
+</form>
+
+       
+    </div> 
+    <div class="container" >
+      <div class="collapse" id="collapseExample">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#declaracion" type="button" role="tab" aria-controls="home" aria-selected="true">Declaración de cookies</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#acercacookies" type="button" role="tab" aria-controls="contact" aria-selected="false">Acerca de las cookies</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="declaracion" role="tabpanel" aria-labelledby="home-tab">
+            <p id="textoCookie">En este sitio web se hace uso de los siguientes tipos de cookies. Para obtener más información lea la <a href="./policies/cookies.html">Política de Cookies</a>:</p>
+            <ul id="inforcookies">
+              <li><i class="icofont-rounded-right"></i><b>Necesarias:</b> Las cookies necesarias ayudan a hacer una página web utilizable activando funciones básicas como la navegación en la página y el acceso a áreas seguras de la página web. Las página web no puede funcionar adecuadamente sin estas cookies. </li>
+              <li><i class="icofont-rounded-right"></i><b>Estadística:</b> las cookies estadísticas ayudan a los propietarios de páginas web a comprender cómo interactúan los visitantes con las páginas web reuniendo y proporcionando información de forma anónima. Se activarán seleccionando la opción Aceptar todas. </li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="acercacookies" role="tabpanel" aria-labelledby="contact-tab"><p id="">Las cookies son pequeños archivos de texto que las páginas web pueden utilizar para hacer más eficiente la experiencia del usuario.
+          La ley afirma que se puede almacenar cookies en su dispositivo si son estrictamente necesarias para el funcionamiento de esta página. Para todos los demás tipos de cookies se necesita su permiso. <br>
+          Esta página utiliza tipos diferentes de cookies. Algunas cookies son colocadas por servicios de terceros que aparecen en la página. <br>
+          En cualquier momento puede cambiar o retirar su consentimiento desde la <a href="./policies/cookies.html">Declaración de cookies</a> en mi sitio web.
+          Obtenga más información sobre quién soy, cómo puede contactarme y cómo proceso los datos personales en mi <a href="./policies/privacidad.html">Política de privacidad</a>.
+          Al contactarme respecto a su consentimiento, por favor, indique el ID y la fecha de su consentimiento. </p></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="page-section" id="cookies">
       <div class="container">
@@ -222,6 +283,184 @@ Si lo deseas también puedes consultar nuestra <a href="./policies/cookies.html"
          menu: '#myMenu'
       });
     </script>
+
+<script defer>
+let cookies = () => {
+
+    //-----------------------------------------------------
+    // Configuración
+    //-----------------------------------------------------
+    const urlsScriptsCookies = ['https://analytics.google.com'];
+    const urlsScriptsCookiesNecesarias = ['https://elenadiazdelcampo.github.io/', 'https://elenadiazdelcampo.github.io/policies/cookies.html', 'https://elenadiazdelcampo.github.io/policies/aviso_legal.html', 'https://elenadiazdelcampo.github.io/policies/privacidad.html'];
+
+    function contenidoScriptsCookies () {
+      
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WBYWSEMTTG');
+    }
+
+    function contenidoScriptsCookiesNecesarias () {
+        
+       localStorage.setItem('cookie-id', true);
+    }
+
+
+
+    //-----------------------------------------------------
+    // Variables
+    //-----------------------------------------------------
+    const seccionCookie = document.querySelector('section.cookies');
+    const cookieSi = document.querySelector('.cookies__boton--si');
+    const cookieNo = document.querySelector('.cookies__boton--no');
+    const cookieNecesarias = document.querySelector('.cookies__boton--sii');
+    const nuevosScripts = document.querySelector('#nuevosScripts');
+    const nuevosScriptsP = document.querySelector('#nuevosScriptsP');
+
+    //-----------------------------------------------------
+    // Funciones
+    //-----------------------------------------------------
+
+    /**
+      * Método que oculta la sección de Cookie para siempre
+      */
+    function ocultarCookie() {
+        // Borra la sección de cookies en el HTML
+        seccionCookie.remove();
+    }
+
+    /**
+      * Método que marca las cookies como aceptadas
+      */
+    function aceptarCookies() {
+        // Oculta el HTML de cookies
+        ocultarCookie();
+        // Guarda que ha aceptado
+        localStorage.setItem('cookie', true);
+        // Tu codigo a ejecutar si aceptan las cookies
+        ejecutarSiAcepta();
+    }
+
+     function aceptarCookiesNecesarias() {
+        // Oculta el HTML de cookies
+         
+        ocultarCookie();
+        // Guarda que ha aceptado
+        localStorage.setItem('cookiesNecesarias', true);
+        
+        // Tu codigo a ejecutar si aceptan las cookies
+        ejecutarSiAceptaNecesarias();
+    }
+
+    /**
+      * Método que marca las cookies como denegadas
+      */
+    function denegarCookies() {
+        // Oculta el HTML de cookies
+        ocultarCookie();
+        // Guarda que ha aceptado
+        localStorage.setItem('cookie', false);
+    }
+
+    /**
+      * Método que ejecuta tu código si aceptan las cookies
+      */
+    function ejecutarSiAcepta() {
+        // Crea los <script>
+        urlsScriptsCookies.forEach((url) => {
+            const nuevoScript = document.createElement('script');
+            nuevoScript.setAttribute('src', url);
+            nuevosScripts.appendChild(nuevoScript);
+            nuevosScriptsP.appendChild(nuevoScript);
+        });
+        // Lanza los códigos
+        contenidoScriptsCookies();
+    }
+
+     /**
+      * Método que ejecuta tu código si aceptan las cookies seleccionadas
+      */
+    function ejecutarSiAceptaNecesarias() {
+        // Crea los <script>
+        urlsScriptsCookies.forEach((url) => {
+            const nuevoScript = document.createElement('script');
+            nuevoScript.setAttribute('src', url);
+            nuevosScripts.appendChild(nuevoScript);
+            nuevosScriptsP.appendChild(nuevoScript);
+        });
+        // Lanza los códigos
+        //contenidoScriptsCookiesNecesarias();
+        if (localStorage.getItem('analiticas') === 'true') {
+            contenidoScriptsCookies();
+            
+        } else {
+          contenidoScriptsCookiesNecesarias();
+        }
+    }
+
+    /**
+      * Método que inicia la lógica
+      */
+    function iniciar() {
+        // Comprueba si en el pasado el usuario ha marcado una opción
+        if (localStorage.getItem('cookie') !== null) {
+            if(localStorage.getItem('cookie') === 'true') {
+                // Aceptó
+                aceptarCookies();
+            } else if (localStorage.getItem('cookiesNecesarias') === 'true') {
+                // Aceptó
+                aceptarCookiesNecesarias();
+
+                
+            } else {
+                // No aceptó
+                denegarCookies();
+            }
+        }
+    }
+
+    //-----------------------------------------------------
+    // Eventos
+    //-----------------------------------------------------
+    cookieSi.addEventListener('click',aceptarCookies, false);
+    cookieNecesarias.addEventListener('click',aceptarCookiesNecesarias, false);
+    cookieNo.addEventListener('click',denegarCookies, false);
+
+    return {
+        iniciar: iniciar
+    }
+}
+
+// Activa el código. Comenta si quieres desactivarlo.
+cookies().iniciar();
+
+</script>
+
+<script type="text/javascript">
+  
+  function comprobar() {
+         var pulsado = false;//variable de comprobación
+         var opciones = document.estacion; //array de elementos
+         var elegido = -1; //número del elemento elegido en el array
+         for (i=0;i<opciones.length;i++) { //bucle de comprobación
+               if (opciones[i].checked == true) {
+               pulsado = true 
+               elegido = i //número del elemento elegido en el array
+              localStorage.setItem(opciones[elegido].value, true);
+               }
+             }
+         if (pulsado == true) { //mensaje de formulario válido
+            miOpcion = opciones[elegido].value
+            alert("Has elegido la opción: " + miOpcion + "\n El formulario ha sido enviado.")
+            }
+         else { //mensaje de formulario no válido.
+            alert("no has elegido ninguna opción. \n Elige una opción para que el formulario pueda ser enviado")
+            return false //el formulario no se envía.
+            } 
+         }
+</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
