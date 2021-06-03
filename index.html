@@ -162,7 +162,7 @@
   <input type="checkbox" name="estacion" value="necesarias" />Necesarias <br/>
   
   <!--<input type="submit" class="cookies__boton cookies__boton--sii">Aceptar solo seleccionada/>-->
-  <input type="submit" class="cookies__boton cookies__boton--sii">Aceptar solo seleccionada/>
+  <input type="submit" class="cookies__boton cookies__boton--sii"/>
 </form>
         <button class="cookies__boton cookies__boton--no">Rechazar</button>
         <button class="cookies__boton cookies__boton--si">Aceptar todas</button>
@@ -1447,6 +1447,25 @@ let cookies = () => {
 
      function aceptarCookiesNecesarias() {
         // Oculta el HTML de cookies
+         var pulsado = false;//variable de comprobación
+         var opciones = document.estacion; //array de elementos
+         var elegido = -1; //número del elemento elegido en el array
+         for (i=0;i<opciones.length;i++) { //bucle de comprobación
+               if (opciones[i].checked == true) {
+               pulsado = true 
+               elegido = i //número del elemento elegido en el array
+              localStorage.setItem(opciones[elegido].value, true);
+               }
+             }
+         if (pulsado == true) { //mensaje de formulario válido
+            miOpcion = opciones[elegido].value
+            alert("Has elegido la opción: " + miOpcion + "\n El formulario ha sido enviado.")
+            }
+         else { //mensaje de formulario no válido.
+            alert("no has elegido ninguna opción. \n Elige una opción para que el formulario pueda ser enviado")
+            return false //el formulario no se envía.
+            } 
+         
         ocultarCookie();
         // Guarda que ha aceptado
         localStorage.setItem('cookiesNecesarias', true);
