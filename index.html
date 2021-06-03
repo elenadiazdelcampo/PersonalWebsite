@@ -1416,10 +1416,7 @@ let cookies = () => {
     }
 
     function contenidoScriptsCookiesNecesarias () {
-        ////////////  ¿Google Analítics? /////////////
-        ////////////  ¿Facebook Pixel? /////////////
-        ////////////  ¿Admob? /////////////
-        ////////////  etc  /////////////
+        
        localStorage.setItem('cookie-id', true);
     }
 
@@ -1508,7 +1505,7 @@ let cookies = () => {
         });
         // Lanza los códigos
         //contenidoScriptsCookiesNecesarias();
-        if (localStorage.getItem('analiticas') == 'true') || {
+        if (localStorage.getItem('analiticas') === 'true') {
             contenidoScriptsCookies();
             
         } else {
