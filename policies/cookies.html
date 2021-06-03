@@ -178,7 +178,56 @@ Al utilizar este sitio consientes el tratamiento tu información por Google en l
 
 <a style="color:black" href="http://www.google.es/policies/privacy/ads/#toc-doubleclick">http://www.google.es/policies/privacy/ads/#toc-doubleclick</a> y a <a style="color:black" href="http://www.google.es/policies/privacy/ads/">http://www.google.es/policies/privacy/ads/</a>.<br><br>
 
-Además, utilizamos cookies de seguimiento con el fin para analizar los hábitos de navegación de los usuarios por otros sitios web y así optimizar nuestros servicios según las preferencias de los usuarios. </p>
+<!--Además, utilizamos cookies de seguimiento con el fin para analizar los hábitos de navegación de los usuarios por otros sitios web y así optimizar nuestros servicios según las preferencias de los usuarios. </p>-->
+
+<div class="containerDos">
+<table class="table table-responsive table-striped">
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Información almacenada</th>
+            <th>Nombre</th>
+            <th>Duración</th>
+            <th>Finalidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td rowspan="2"><strong>Analíticas</strong></td>
+            <td>Cookie</td>
+            <td>_ga</td>
+            <td>2 años</td>
+            <td>Medición interna con Google Analytics para distinguir a los usuarios</td>
+        </tr>
+        <tr>
+            <td>Cookie</td>
+            <td>_ga_<container-id></td>
+            <td>2 años</td>
+            <td>Utilizada por Google Analytics para mantener el estado de la sesión</td>
+        </tr>
+        <tr>
+          <td rowspan="3"><strong>Necesarias</strong></td>
+            <td>LocalStorage</td>
+            <td>cookie</td>
+            <td>Indefinido</td>
+            <td>Comprobar si se han aceptado todas las cookies o se han rechazado</td>
+        </tr>
+         <tr>
+            <td>LocalStorage</td>
+            <td>cookie</td>
+            <td>Indefinido</td>
+            <td>Comprobar qué tipo de cookies se han seleccionado según las preferencias de los usuarios</td>
+        </tr>
+           <tr>
+            <td>LocalStorage</td>
+            <td>analiticas</td>
+            <td>Indefinido</td>
+            <td>Comprobar si se ha seleccionado la opción de permitir cookies analíticas</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<br>
 
 <p id="descriptionC"><strong>CONFIGURACIÓN DEL USUARIO PARA EVITAR COOKIES</strong></p>
 
@@ -197,22 +246,13 @@ Así, puedes bloquear las cookies a través de las herramientas de configuració
     </ul>
   </div>
 
-<p id="descriptionC">Además, podrás borrar todas las cookies instaladas a través de la opción Eliminar cookies del footer que encontrarás abajo de cada sección o en el menú lateral derecho que aparece en la página principal.
-</p>
-
-<p id="descriptionC">
-<form action="" method="get">
-  <label>
-    <input name="checkbox" type="checkbox" id="analiticas" value="true" onclick="if(this.checked)localStorage.setItem(this.id,this.value);else localStorage.removeItem(this.id);"/>Analíticas <br/>
-  </label>
-  <label>
-    <input name="checkbox2" type="checkbox" id="necesarias" value="true" checked disabled/>Necesarias <br/>
-  </label>
-  
- <button id="clear"  class="btn btn-primario" onclick="eliminarCookies();">Eliminar cookies</button>
-        
+<p id="descriptionC">Además, podrás borrar todas las cookies instaladas a través de la opción Eliminar cookies del footer que encontrarás abajo de cada sección o en el menú lateral derecho que aparece en la página principal o través del siguiente botón: <br> </p>
+<div class="containerDos">
+  <form action="" method="get">
+  <button id="clear"  class="btn btn-primario2" onclick="eliminarCookies();">Eliminar cookies</button>
 </form>
-</p>
+</div>
+<br>
 <p id="descriptionC"><strong>PARA SABER MÁS SOBRE LAS COOKIES</strong></p>
 
 <p id="descriptionC">Protección de datos de Google Analytics: <a style="color:black" href="http://www.google.com/analytics/learn/privacy.html">http://www.google.com/analytics/learn/privacy.html</a> <br>

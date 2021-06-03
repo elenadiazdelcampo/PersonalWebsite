@@ -1485,3 +1485,12 @@ label {
 }
 
 
+.containerDos {
+    max-width: 1050px;
+    padding-left: 60px;
+}
+
+.btn.btn-primario2 {
+    margin-top: 1%;
+    font-weight: bold;
+}
