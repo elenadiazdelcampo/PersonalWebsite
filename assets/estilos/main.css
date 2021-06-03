@@ -1467,3 +1467,21 @@ label {
 .sticky li p a:hover{
     text-decoration:underline;
 }
+
+.modal-contenido{
+  background-color:aqua;
+  width:300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;  
+}
+
+

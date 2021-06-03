@@ -138,6 +138,18 @@ Así, puedes bloquear las cookies a través de las herramientas de configuració
 <p id="descriptionC">Además, podrás borrar todas las cookies instaladas a través de la opción Eliminar cookies del footer que encontrarás abajo de cada sección o en el menú lateral derecho que aparece en la página principal.
 </p>
 
+<form action="" method="get">
+  <label>
+    <input name="checkbox" type="checkbox" id="analiticas" value="true" onclick="if(this.checked)localStorage.setItem(this.id,this.value);else localStorage.removeItem(this.id);"/>Analíticas <br/>
+  </label>
+  <label>
+    <input name="checkbox2" type="checkbox" id="necesarias" value="true" checked disabled/>Necesarias <br/>
+  </label>
+  
+ <button id="clear">Limpiar cookies</button>
+    
+        
+</form>
 
 <p id="descriptionC"><strong>PARA SABER MÁS SOBRE LAS COOKIES</strong></p>
 
@@ -183,6 +195,17 @@ Cuando se produzcan cambios significativos en esta Política de Cookies, estos s
          anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
          menu: '#myMenu'
       });
+    </script>
+
+    <script>
+      function eliminarCookies() {
+        document.cookie.split(";").forEach(function(c) {
+          document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+        });
+      }
+      $('#clear').click(function() {
+        eliminarCookies();
+      })
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
