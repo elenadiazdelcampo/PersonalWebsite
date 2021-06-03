@@ -1594,6 +1594,7 @@ function FbotonOn() {
     localStorage.removeItem('cookiesNecesarias');
     localStorage.removeItem('cookie-id');
     (function () {
+    setCookie(NID, "", -1);
     var cookies = document.cookie.split("; ");
     for (var c = 0; c < cookies.length; c++) {
         var d = window.location.hostname.split(".");
